@@ -1,15 +1,15 @@
-///<reference path='./../typings/node/node.d.ts'/>
-///<reference path='./../typings/express/express.d.ts'/>
-///<reference path='./../typings/body-parser/body-parser.d.ts'/>
-/// <reference path="./../typings/serve-static/serve-static.d.ts" />
-/// <reference path="./../typings/mime/mime.d.ts" />
+///<reference path='./typings/node/node.d.ts'/>
+///<reference path='./typings/express/express.d.ts'/>
+///<reference path='./typings/body-parser/body-parser.d.ts'/>
+/// <reference path="./typings/serve-static/serve-static.d.ts" />
+/// <reference path="./typings/mime/mime.d.ts" />
 var http = require("http");
 var path = require("path");
 var express = require("express");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
 var app = express();
-app.set("views", path.resolve(__dirname, "./../views"));
+app.set("views", path.resolve(__dirname, "./views"));
 app.set("view engine", "ejs");
 var entries = [];
 app.locals.entries = entries;
