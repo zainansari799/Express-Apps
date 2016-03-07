@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Posts</title>
+    <link href="/bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/bootstrap-3.3.2-dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="all">  
+    <link href="/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    
+
+    
+</head>
+<body>
+
+
+<% include header %>
+<br><br>
+
+<div class="container">
+<br><br>
+
+<div class="row">
+
+<div class="col-md-10 col-sm-12" id="posthead">
+<h1>Your Notes</h1> <br>
+<div id='showpost'></div>
+</div>
+
+<div class="col-md-2" id="writepost">
+<form method="post" action="/blog">
+    <button type="submit"  class="btn btn-success">Write Your Notes</button>
+</form>
+</div>
+
+
+
+</div>
+
+
+</body>
+<script>
+
+var data=<%- displaypost %>
+for(var i=0 ;i<data.length;i++){
+document.getElementById('showpost').innerHTML+='<div class="panel panel-success">'
+        + '<div class="panel-heading">'
+        + '<h3 class="panel-title">'+data[i].day+'</h3>' 
+        + '</div>'
+        + '<div class="panel-body">'
+        +  data[i].content+'<span class="glyphicon glyphicon-trash pull-right glyph-color" name="delete"></span>'+'<span class="glyphicon glyphicon-pencil pull-right glyph-color" name="edit"></span>'+'</div>'
+        + '</div>'
+}        
+</script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    
+    
+    <!--Links for login form-->
+  
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!--//webfonts-->
+  
+    
+    
+    <!--Customize Stylesheet-->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    
+
+
+    
+</head>
+<body>
+
+
+
+ <!-----start-main---->
+	 <div class="main">
+		<div class="login-form">
+			<h1>Create Account</h1>
+					
+					<div class="head">
+						<img src="images/user.png">
+					</div>
+                    	
+                <form action="/signup" method="post">
+						<input type="text" class="text"  onfocus="this.value = '';" name="username" required placeholder="USERNAME" >
+						<input type="password" value="Password" onfocus="this.value = '';" name="pw" required placeholder="PASSWORD">
+                        <input type="email" value="Email" onfocus="this.value = '';" name="email" required placeholder="Email">
+						<div class="submit">
+							<input type="submit" onclick="myFunction()" value="Create Account" >
+					    </div>        
+                </form>
+                
+         
+			</div>
+			<!--//End-SignUp-form-->
+         
+		</div>
+			 <!-----//end-main---->
+
+
+
+
+
+
+</body>
+</html>

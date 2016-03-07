@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    
+    <!--Links for login form-->
+  
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<!--//webfonts-->
+  
+    
+    
+    <!--Customize Stylesheet-->
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" media="all">
+    
+
+
+    
+</head>
+<body>
+
+
+
+<!--<form action="/login" method="post">
+     <p><label>Username: </label><input type="text" name="name" required></p>
+     <p><label>Password: </label><input type="password" name="pw" required></p>
+     <input type="submit" value="Login" class="btn btn-info">
+     
+</form><br>
+
+<form action="/signup" method="get">
+    <input type="submit" value="Sign Up" class="btn btn-warning">
+</form>
+
+-->
+
+
+
+
+
+ <!-----start-main---->
+	 <div class="main">
+		<div class="login-form">
+			<h1>Member Login</h1>
+					
+					<div class="head">
+						<img src="images/user.png">
+					</div>
+                    	
+                <form action="/login" method="post">
+						<input type="text" class="text"  onfocus="this.value = '';" name="username" required placeholder="USERNAME" >
+						<input type="password" value="Password" onfocus="this.value = '';" name="pw" required placeholder="PASSWORD">
+						<div class="submit">
+							<input type="submit" onclick="myFunction()" value="LOGIN" >
+					    </div>
+                        
+                </form>
+                
+                
+			</div>
+			<!--//End-login-form-->
+         
+		</div>
+			 <!-----//end-main---->
+
+
+
+
+
+
+</body>
+</html>

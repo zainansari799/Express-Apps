@@ -1,0 +1,49 @@
+#title{
+	float: right;
+	margin-right: 20%;
+	font-size: 21px;
+	font-weight: bolder;
+    margin-top: 5px;	
+}
+
+#signup{
+    margin-top: -30px;
+}
+.daily{
+    font-size: 55px !important;
+    color: whitesmoke !important;
+    font-weight: bold !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke !important;
+}
+
+.header{
+    margin-top: -21px;
+    overflow: y;
+    text-align: center;
+    background-color: forestgreen;
+}
+
+#head{
+    margin-left: -20%;
+}
+.glyph-color{
+    color: red;
+    font-size: 15px;
+    margin-right: 9px;
+}
+#headfix{
+    position: fixed;
+    z-index: 1000;
+        width: 100%;
+}
+.submitt{
+    width: 85% !important;
+    text-align: center;
+    margin-right: auto !important;
+    margin-left: 7% !important;
+}
